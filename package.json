@@ -1,0 +1,33 @@
+{
+  "name": "untitlednodeproject",
+  "version": "1.0.0",
+  "description": "A community experiment, where contributors can only add a maximum of 500 lines. The best contributions will receive the Coder Award on our site.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "build": "eslint . --ext .js && node src/index.js",
+    "lint": "eslint . --ext .js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/v3rmillionwastaken/UntitledNodeProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/v3rmillionwastaken/UntitledNodeProject/issues"
+  },
+  "homepage": "https://github.com/v3rmillionwastaken/UntitledNodeProject#readme",
+  "dependencies": {
+    "ffi-napi": "^3.0.1",
+    "is-even": "^1.0.0",
+    "is-odd": "^3.0.1",
+    "koa": "^2.13.0",
+    "win32-api": "^9.5.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.7.0"
+  }
+}

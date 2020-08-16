@@ -15,11 +15,12 @@ Clone the repository locally, navigate to the repisitory in your command line, a
 
 3. Your Merge Request will be declined if you add any code outside the ./src folder. No changing package.json or anything like that.
 
-4. Your code **cannot** connect to the internet. After npm i is run, the application will not make any web calls. This application must run standalone, with the modules built in to node or any of the following modules that we've added:
+4. Your code **cannot** connect to the internet. After npm i is run, the application will not make any web calls.  The only use of a connection will be for the app to install the following modules that we've added:
 
     - [Koa](https://koajs.com/) (this is similar to express).
     - [ffi-napi](https://github.com/node-ffi-napi/node-ffi-napi) (yes, you can add C code),
     - [win32-api](https://github.com/waitingsong/node-win32-api) - why not? idk what people are gonna try to make.
+    - Electron - its electron
     - is-even - checks if a number is even
     - is-odd - checks if a number is odd
     - (I will _consider_ adding more as needed and by request.)

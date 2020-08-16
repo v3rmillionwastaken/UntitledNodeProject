@@ -9,11 +9,11 @@ To get started, you'll need the latest LTS version of Node.JS (12.x.x) which can
 Clone the repository locally, navigate to the repisitory in your command line, and type `npm i`. To run the code, type `npm start`. We recommend using Visual Studio Code to edit the code and make commits.
 
 # The Rules
-1. Each user can only make one successful PR. You need to send a link to your PR on the v3rm thread, and all PRs that are not linked will be declined - no matter how good they are!
+1. Each user can only make one successful Merge Request. You need to send a link to your Merge Request on the v3rm thread, and all Merge Request that are not linked will be declined - no matter how good they are!
 
-2. Your PR will be declined if you add any more than 500 lines of code, or if you remove any more than 100 lines of code.
+2. Your Merge Request will be declined if you add any more than 500 lines of code, or if you remove any more than 100 lines of code.
 
-3. Your PR will be declined if you add any code outside the ./src folder. No changing package.json or anything like that.
+3. Your Merge Request will be declined if you add any code outside the ./src folder. No changing package.json or anything like that.
 
 4. Your code **cannot** connect to the internet. After npm i is run, the application will not make any web calls. This application must run standalone, with the modules built in to node or any of the following modules that we've added:
 
@@ -28,10 +28,8 @@ Clone the repository locally, navigate to the repisitory in your command line, a
 6. Nothing you add to this can break v3rmillion rules.
 
 
-# How to Pull Request
-
-### Branches
-You cannot commit directly to the master branch. First, you will need to swap to a new branch, eg: `git checkout -b "SegFault_NewWebpage"`, and then you will need to make a pull request to master on GitHub when you're done making your commits.
+# How to Merge Request
+To work on this project, you will need to "Fork" the project, make your changes, and then perform a merge request to add your code.
 
 ### eslint
 We're using eslint rules to automatically fail builds which don't match the eslint config found in .eslintrc. This means your PR will fail if your code is not properly beautified. To check if your code will meet the style rules, run this in the terminal.
@@ -46,7 +44,7 @@ Unfortunately, I can't find any eslint rules to prevent people from writing one 
 ```js
 const a = () => { const b = 'b'; return b }
 ```
-Because we're not allowing you to commit more than 500 lines of code, we can't just have you minifying all your code into one line. So, we're checking for this manually when approving your pull request.
+Because we're not allowing you to commit more than 500 lines of code, we can't just have you minifying all your code into one line. So, we're checking for this manually when approving your merge request.
 
 # 
 ## The best contributions to this project will receive the Coder Badge on site.

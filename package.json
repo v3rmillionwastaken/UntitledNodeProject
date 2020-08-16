@@ -28,6 +28,7 @@
     "win32-api": "^9.5.0"
   },
   "devDependencies": {
-    "eslint": "^7.7.0"
+    "eslint": "^7.7.0",
+    "nodemon": "^2.0.4"
   }
 }

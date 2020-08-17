@@ -1,36 +1,27 @@
 // Good luck!
-const electron_api = require('./electron.js')
+const electron_api = require('./electron.js')// Require everything in "modules" folder
+const path = require("path")
+const fs = require("fs")
+const cards = new Map()
+const cardsPath = path.join(__dirname, "/cards")
+const modulesPath = path.join(__dirname, "/modules")
 
-const main = () => {
-  console.log('=============UntitledNodeProject=============')
-  console.log('Made by v3rmillion.net')
-  console.log('If you read this you are cute!')
-}
-
-const dancingSpider = () => {
-  function sleep(milliseconds) {
-    const start = new Date().getTime()
-    for (let i = 0; i < 1e7; i++) {
-      if ((new Date().getTime() - start) > milliseconds){
-        break
-      }
-    }
-  }
-
-  for(let i = 0; i < 10; i++) {
-    sleep(300)
-    console.log("           /\\oo/|")
-    sleep(300)
-    console.log("          |\\oo/\\")
-  }
-}
-
-// make sure to add your thing into this list if you want it displayed in the gui
-const listOfThings = []
-listOfThings.push({
-  key: dancingSpider,
-  value: { contributor: "@fuzzbuck", title: "dancing spider" }
+/**
+ * Automatically require and load all modules and 
+ * cards inside the modules and cards folder.
+ */
+let _ = fs.readdirSync(cardsPath).map(e => e.replace(".js", ""))
+_.forEach(name => {
+	const c = require(path.join(cardsPath, name))
+	c._location = path.join(cardsPath, name)
+	electron_api.cards.set(name, c)
 })
 
-electron_api.processListOfThings(listOfThings)
-main()
+_ = fs.readdirSync(modulesPath).map(e => e.replace(".js", ""))
+_.forEach(name => {
+	const m = require(path.join(modulesPath, name))
+	m._location = path.join(modulesPath, name)
+	electron_api.modules.set(name, m)
+})
+
+electron_api.modules.get("motd").exec()

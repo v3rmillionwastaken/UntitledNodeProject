@@ -8,6 +8,24 @@ function Calculate(X, Y, Operand) {
 		case "X":
 			return X * Y;
 			break;
+		case "/":
+			return X / Y;
+			break;
+		case "+":
+			return X + Y;
+			break;
+		case "%":
+			return X % Y;
+			break;
+		case "**":
+			return X ** Y;
+			break;
+		case "^":
+			return X ** Y;
+			break;
+		default:
+			alert("help");
+			break;
 	}
 }
 

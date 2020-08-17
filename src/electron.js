@@ -1,12 +1,15 @@
-// Responsible for loading Electron & doing stuff there.
+const modules = new Map()
+const cards = new Map()
+module.exports = {
+	cards: cards,
+	modules: modules
+}
 
+// Responsible for loading Electron & doing stuff there.
 const window_height = 400
 const window_width = 700
 
 const { app, BrowserWindow, ipcMain } = require('electron')
-
-let funcs = []
-let listOfThings = []
 
 function createWindow () {
     const win = new BrowserWindow({
@@ -22,27 +25,15 @@ function createWindow () {
     win.setMenu(null)
     win.setResizable(false)
 
-
     win.webContents.on('did-finish-load', () => {
-        for(let i = 0; i < listOfThings.length; i++){
-            const thing = listOfThings[i]
-            win.webContents.send('addCard', { contributor: thing.value.contributor, title: thing.value.title, id: i.toString()})
-        }
+		for (const [id, value] of cards.entries()) {
+			win.webContents.send('addCard', { contributor: value.contributor, title: value.name, id: id })
+		}
     })
 }
 
 app.whenReady().then(createWindow)
 
-ipcMain.on('execute', (event, arg) => {
-    funcs[arg.id]()
+ipcMain.on('execute', (event, args) => {
+	cards.get(args.id).exec(event, args, modules, cards)
 })
-
-module.exports = {
-    processListOfThings: function(_listOfThings){
-        listOfThings = _listOfThings
-        for(let i = 0; i < _listOfThings.length; i++) {
-            const thing = _listOfThings[i]
-            funcs[i] = thing.key
-        }
-    }
-}

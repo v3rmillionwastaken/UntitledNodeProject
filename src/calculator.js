@@ -1,3 +1,5 @@
+// Calculate some simple maths!
+
 function Calculate(X, Y, Operand) {
 	if (Operand == "add") {
 		if (X == "0") {

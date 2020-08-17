@@ -2,7 +2,6 @@
 const electron_api = require('./electron.js')// Require everything in "modules" folder
 const path = require("path")
 const fs = require("fs")
-const cards = new Map()
 const cardsPath = path.join(__dirname, "/cards")
 const modulesPath = path.join(__dirname, "/modules")
 

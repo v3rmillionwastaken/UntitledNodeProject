@@ -2,9 +2,9 @@
   "name": "untitlednodeproject",
   "version": "1.0.0",
   "description": "A community experiment, where contributors can only add a maximum of 500 lines. The best contributions will receive the Coder Award on our site.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "start": "node src/index.js",
+    "start": "electron .",
     "build": "eslint . --ext .js && node src/index.js",
     "lint": "eslint . --ext .js",
     "test": "echo \"Error: no test specified\" && exit 1"

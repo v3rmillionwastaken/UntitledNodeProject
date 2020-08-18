@@ -1,5 +1,499 @@
 // Calculate some simple maths!
 
+function Square(X) {
+	if (X == "0") {
+		return "0"
+	} else if (X == "1") {
+		return "1"
+	} else if (X == "2") {
+		return "4"
+	} else if (X == "3") {
+		return "9"
+	} else if (X == "4") {
+		return "16"
+	} else if (X == "5") {
+		return "25"
+	} else if (X == "6") {
+		return "36"
+	} else if (X == "7") {
+		return "49"
+	} else if (X == "8") {
+		return "64"
+	} else if (X == "9") {
+		return "81"
+	} else if (X == "10") {
+		return "100"
+	} else if (X == "11") {
+		return "121"
+	} else if (X == "12") {
+		return "144"
+	} else if (X == "13") {
+		return "169"
+	} else if (X == "14") {
+		return "196"
+	} else if (X == "15") {
+		return "225"
+	} else if (X == "16") {
+		return "256"
+	} else if (X == "17") {
+		return "289"
+	} else if (X == "18") {
+		return "324"
+	} else if (X == "19") {
+		return "361"
+	} else if (X == "20") {
+		return "400"
+	} else if (X == "21") {
+		return "441"
+	} else if (X == "22") {
+		return "484"
+	} else if (X == "23") {
+		return "529"
+	} else if (X == "24") {
+		return "576"
+	} else if (X == "25") {
+		return "625"
+	} else if (X == "26") {
+		return "676"
+	} else if (X == "27") {
+		return "729"
+	} else if (X == "28") {
+		return "784"
+	} else if (X == "29") {
+		return "841"
+	} else if (X == "30") {
+		return "900"
+	} else if (X == "31") {
+		return "961"
+	} else if (X == "32") {
+		return "1024"
+	} else if (X == "33") {
+		return "1089"
+	} else if (X == "34") {
+		return "1156"
+	} else if (X == "35") {
+		return "1225"
+	} else if (X == "36") {
+		return "1296"
+	} else if (X == "37") {
+		return "1369"
+	} else if (X == "38") {
+		return "1444"
+	} else if (X == "39") {
+		return "1521"
+	} else if (X == "40") {
+		return "1600"
+	} else if (X == "41") {
+		return "1681"
+	} else if (X == "42") {
+		return "1764"
+	} else if (X == "43") {
+		return "1849"
+	} else if (X == "44") {
+		return "1936"
+	} else if (X == "45") {
+		return "2025"
+	} else if (X == "46") {
+		return "2116"
+	} else if (X == "47") {
+		return "2209"
+	} else if (X == "48") {
+		return "2304"
+	} else if (X == "49") {
+		return "2401"
+	} else if (X == "50") {
+		return "2500"
+	} else if (X == "51") {
+		return "2601"
+	} else if (X == "52") {
+		return "2704"
+	} else if (X == "53") {
+		return "2809"
+	} else if (X == "54") {
+		return "2916"
+	} else if (X == "55") {
+		return "3025"
+	} else if (X == "56") {
+		return "3136"
+	} else if (X == "57") {
+		return "3249"
+	} else if (X == "58") {
+		return "3364"
+	} else if (X == "59") {
+		return "3481"
+	} else if (X == "60") {
+		return "3600"
+	} else if (X == "61") {
+		return "3721"
+	} else if (X == "62") {
+		return "3844"
+	} else if (X == "63") {
+		return "3969"
+	} else if (X == "64") {
+		return "4096"
+	} else if (X == "65") {
+		return "4225"
+	} else if (X == "66") {
+		return "4356"
+	} else if (X == "67") {
+		return "4489"
+	} else if (X == "68") {
+		return "4624"
+	} else if (X == "69") {
+		return "4761"
+	} else if (X == "70") {
+		return "4900"
+	} else if (X == "71") {
+		return "5041"
+	} else if (X == "72") {
+		return "5184"
+	} else if (X == "73") {
+		return "5329"
+	} else if (X == "74") {
+		return "5476"
+	} else if (X == "75") {
+		return "5625"
+	} else if (X == "76") {
+		return "5776"
+	} else if (X == "77") {
+		return "5929"
+	} else if (X == "78") {
+		return "6084"
+	} else if (X == "79") {
+		return "6241"
+	} else if (X == "80") {
+		return "6400"
+	} else if (X == "81") {
+		return "6561"
+	} else if (X == "82") {
+		return "6724"
+	} else if (X == "83") {
+		return "6889"
+	} else if (X == "84") {
+		return "7056"
+	} else if (X == "85") {
+		return "7225"
+	} else if (X == "86") {
+		return "7396"
+	} else if (X == "87") {
+		return "7569"
+	} else if (X == "88") {
+		return "7744"
+	} else if (X == "89") {
+		return "7921"
+	} else if (X == "90") {
+		return "8100"
+	} else if (X == "91") {
+		return "8281"
+	} else if (X == "92") {
+		return "8464"
+	} else if (X == "93") {
+		return "8649"
+	} else if (X == "94") {
+		return "8836"
+	} else if (X == "95") {
+		return "9025"
+	} else if (X == "96") {
+		return "9216"
+	} else if (X == "97") {
+		return "9409"
+	} else if (X == "98") {
+		return "9604"
+	} else if (X == "99") {
+		return "9801"
+	} else if (X == "100") {
+		return "10000"
+	} else if (X == "101") {
+		return "10201"
+	} else if (X == "102") {
+		return "10404"
+	} else if (X == "103") {
+		return "10609"
+	} else if (X == "104") {
+		return "10816"
+	} else if (X == "105") {
+		return "11025"
+	} else if (X == "106") {
+		return "11236"
+	} else if (X == "107") {
+		return "11449"
+	} else if (X == "108") {
+		return "11664"
+	} else if (X == "109") {
+		return "11881"
+	} else if (X == "110") {
+		return "12100"
+	} else if (X == "111") {
+		return "12321"
+	} else if (X == "112") {
+		return "12544"
+	} else if (X == "113") {
+		return "12769"
+	} else if (X == "114") {
+		return "12996"
+	} else if (X == "115") {
+		return "13225"
+	} else if (X == "116") {
+		return "13456"
+	} else if (X == "117") {
+		return "13689"
+	} else if (X == "118") {
+		return "13924"
+	} else if (X == "119") {
+		return "14161"
+	} else if (X == "120") {
+		return "14400"
+	} else if (X == "121") {
+		return "14641"
+	} else if (X == "122") {
+		return "14884"
+	} else if (X == "123") {
+		return "15129"
+	} else if (X == "124") {
+		return "15376"
+	} else if (X == "125") {
+		return "15625"
+	} else if (X == "126") {
+		return "15876"
+	} else if (X == "127") {
+		return "16129"
+	} else if (X == "128") {
+		return "16384"
+	} else if (X == "129") {
+		return "16641"
+	} else if (X == "130") {
+		return "16900"
+	} else if (X == "131") {
+		return "17161"
+	} else if (X == "132") {
+		return "17424"
+	} else if (X == "133") {
+		return "17689"
+	} else if (X == "134") {
+		return "17956"
+	} else if (X == "135") {
+		return "18225"
+	} else if (X == "136") {
+		return "18496"
+	} else if (X == "137") {
+		return "18769"
+	} else if (X == "138") {
+		return "19044"
+	} else if (X == "139") {
+		return "19321"
+	} else if (X == "140") {
+		return "19600"
+	} else if (X == "141") {
+		return "19881"
+	} else if (X == "142") {
+		return "20164"
+	} else if (X == "143") {
+		return "20449"
+	} else if (X == "144") {
+		return "20736"
+	} else if (X == "145") {
+		return "21025"
+	} else if (X == "146") {
+		return "21316"
+	} else if (X == "147") {
+		return "21609"
+	} else if (X == "148") {
+		return "21904"
+	} else if (X == "149") {
+		return "22201"
+	} else if (X == "150") {
+		return "22500"
+	} else if (X == "151") {
+		return "22801"
+	} else if (X == "152") {
+		return "23104"
+	} else if (X == "153") {
+		return "23409"
+	} else if (X == "154") {
+		return "23716"
+	} else if (X == "155") {
+		return "24025"
+	} else if (X == "156") {
+		return "24336"
+	} else if (X == "157") {
+		return "24649"
+	} else if (X == "158") {
+		return "24964"
+	} else if (X == "159") {
+		return "25281"
+	} else if (X == "160") {
+		return "25600"
+	} else if (X == "161") {
+		return "25921"
+	} else if (X == "162") {
+		return "26244"
+	} else if (X == "163") {
+		return "26569"
+	} else if (X == "164") {
+		return "26896"
+	} else if (X == "165") {
+		return "27225"
+	} else if (X == "166") {
+		return "27556"
+	} else if (X == "167") {
+		return "27889"
+	} else if (X == "168") {
+		return "28224"
+	} else if (X == "169") {
+		return "28561"
+	} else if (X == "170") {
+		return "28900"
+	} else if (X == "171") {
+		return "29241"
+	} else if (X == "172") {
+		return "29584"
+	} else if (X == "173") {
+		return "29929"
+	} else if (X == "174") {
+		return "30276"
+	} else if (X == "175") {
+		return "30625"
+	} else if (X == "176") {
+		return "30976"
+	} else if (X == "177") {
+		return "31329"
+	} else if (X == "178") {
+		return "31684"
+	} else if (X == "179") {
+		return "32041"
+	} else if (X == "180") {
+		return "32400"
+	} else if (X == "181") {
+		return "32761"
+	} else if (X == "182") {
+		return "33124"
+	} else if (X == "183") {
+		return "33489"
+	} else if (X == "184") {
+		return "33856"
+	} else if (X == "185") {
+		return "34225"
+	} else if (X == "186") {
+		return "34596"
+	} else if (X == "187") {
+		return "34969"
+	} else if (X == "188") {
+		return "35344"
+	} else if (X == "189") {
+		return "35721"
+	} else if (X == "190") {
+		return "36100"
+	} else if (X == "191") {
+		return "36481"
+	} else if (X == "192") {
+		return "36864"
+	} else if (X == "193") {
+		return "37249"
+	} else if (X == "194") {
+		return "37636"
+	} else if (X == "195") {
+		return "38025"
+	} else if (X == "196") {
+		return "38416"
+	} else if (X == "197") {
+		return "38809"
+	} else if (X == "198") {
+		return "39204"
+	} else if (X == "199") {
+		return "39601"
+	} else if (X == "200") {
+		return "40000"
+	} else if (X == "201") {
+		return "40401"
+	} else if (X == "202") {
+		return "40804"
+	} else if (X == "203") {
+		return "41209"
+	} else if (X == "204") {
+		return "41616"
+	} else if (X == "205") {
+		return "42025"
+	} else if (X == "206") {
+		return "42436"
+	} else if (X == "207") {
+		return "42849"
+	} else if (X == "208") {
+		return "43264"
+	} else if (X == "209") {
+		return "43681"
+	} else if (X == "210") {
+		return "44100"
+	} else if (X == "211") {
+		return "44521"
+	} else if (X == "212") {
+		return "44944"
+	} else if (X == "213") {
+		return "45369"
+	} else if (X == "214") {
+		return "45796"
+	} else if (X == "215") {
+		return "46225"
+	} else if (X == "216") {
+		return "46656"
+	} else if (X == "217") {
+		return "47089"
+	} else if (X == "218") {
+		return "47524"
+	} else if (X == "219") {
+		return "47961"
+	} else if (X == "220") {
+		return "48400"
+	} else if (X == "221") {
+		return "48841"
+	} else if (X == "222") {
+		return "49284"
+	} else if (X == "223") {
+		return "49729"
+	} else if (X == "224") {
+		return "50176"
+	} else if (X == "225") {
+		return "50625"
+	} else if (X == "226") {
+		return "51076"
+	} else if (X == "227") {
+		return "51529"
+	} else if (X == "228") {
+		return "51984"
+	} else if (X == "229") {
+		return "52441"
+	} else if (X == "230") {
+		return "52900"
+	} else if (X == "231") {
+		return "53361"
+	} else if (X == "232") {
+		return "53824"
+	} else if (X == "233") {
+		return "54289"
+	} else if (X == "234") {
+		return "54756"
+	} else if (X == "235") {
+		return "55225"
+	} else if (X == "236") {
+		return "55696"
+	} else if (X == "237") {
+		return "56169"
+	} else if (X == "238") {
+		return "56644"
+	} else if (X == "239") {
+		return "57121"
+	} else if (X == "240") {
+		return "57600"
+	} else if (X == "241") {
+		return "58081"
+	} else if (X == "242") {
+		return "58564"
+	} else if (X == "243") {
+		return "59049"
+	} else if (X == "244") {
+		return "59536"
+	}
+}
+
 function Calculate(X, Y, Operand) {
 	if (Operand == "add") {
 		if (X == "0") {
@@ -960,6 +1454,7 @@ function Fibonacci(n) {
 }
 
 module.exports = {
-	Calculate: Calculate,
-	Fibonacci: Fibonacci
+    Calculate: Calculate,
+    Fibonacci: Fibonacci,
+    Square: Square
 }

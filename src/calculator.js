@@ -1,5 +1,503 @@
 // Calculate some simple maths!
 
+function Squareroot(X) {
+	if (X == "0") {
+		return "0"
+	} else if (X == '1') {
+		return '1'
+	} else if (X == '2') {
+		return '1.4142135623730951'
+	} else if (X == '3') {
+		return '1.7320508075688772'
+	} else if (X == '4') {
+		return '2'
+	} else if (X == '5') {
+		return '2.23606797749979'
+	} else if (X == '6') {
+		return '2.449489742783178'
+	} else if (X == '7') {
+		return '2.6457513110645907'
+	} else if (X == '8') {
+		return '2.8284271247461903'
+	} else if (X == '9') {
+		return '3'
+	} else if (X == '10') {
+		return '3.1622776601683795'
+	} else if (X == '11') {
+		return '3.3166247903554'
+	} else if (X == '12') {
+		return '3.4641016151377544'
+	} else if (X == '13') {
+		return '3.605551275463989'
+	} else if (X == '14') {
+		return '3.7416573867739413'
+	} else if (X == '15') {
+		return '3.872983346207417'
+	} else if (X == '16') {
+		return '4'
+	} else if (X == '17') {
+		return '4.123105625617661'
+	} else if (X == '18') {
+		return '4.242640687119285'
+	} else if (X == '19') {
+		return '4.358898943540674'
+	} else if (X == '20') {
+		return '4.47213595499958'
+	} else if (X == '21') {
+		return '4.58257569495584'
+	} else if (X == '22') {
+		return '4.69041575982343'
+	} else if (X == '23') {
+		return '4.795831523312719'
+	} else if (X == '24') {
+		return '4.898979485566356'
+	} else if (X == '25') {
+		return '5'
+	} else if (X == '26') {
+		return '5.0990195135927845'
+	} else if (X == '27') {
+		return '5.196152422706632'
+	} else if (X == '28') {
+		return '5.291502622129181'
+	} else if (X == '29') {
+		return '5.385164807134504'
+	} else if (X == '30') {
+		return '5.477225575051661'
+	} else if (X == '31') {
+		return '5.5677643628300215'
+	} else if (X == '32') {
+		return '5.656854249492381'
+	} else if (X == '33') {
+		return '5.744562646538029'
+	} else if (X == '34') {
+		return '5.830951894845301'
+	} else if (X == '35') {
+		return '5.916079783099616'
+	} else if (X == '36') {
+		return '6'
+	} else if (X == '37') {
+		return '6.082762530298219'
+	} else if (X == '38') {
+		return '6.164414002968976'
+	} else if (X == '39') {
+		return '6.244997998398398'
+	} else if (X == '40') {
+		return '6.324555320336759'
+	} else if (X == '41') {
+		return '6.4031242374328485'
+	} else if (X == '42') {
+		return '6.48074069840786'
+	} else if (X == '43') {
+		return '6.557438524302'
+	} else if (X == '44') {
+		return '6.6332495807108'
+	} else if (X == '45') {
+		return '6.708203932499369'
+	} else if (X == '46') {
+		return '6.782329983125268'
+	} else if (X == '47') {
+		return '6.855654600401044'
+	} else if (X == '48') {
+		return '6.928203230275509'
+	} else if (X == '49') {
+		return '7'
+	} else if (X == '50') {
+		return '7.0710678118654755'
+	} else if (X == '51') {
+		return '7.14142842854285'
+	} else if (X == '52') {
+		return '7.211102550927978'
+	} else if (X == '53') {
+		return '7.280109889280518'
+	} else if (X == '54') {
+		return '7.3484692283495345'
+	} else if (X == '55') {
+		return '7.416198487095663'
+	} else if (X == '56') {
+		return '7.483314773547883'
+	} else if (X == '57') {
+		return '7.54983443527075'
+	} else if (X == '58') {
+		return '7.615773105863909'
+	} else if (X == '59') {
+		return '7.681145747868608'
+	} else if (X == '60') {
+		return '7.745966692414834'
+	} else if (X == '61') {
+		return '7.810249675906654'
+	} else if (X == '62') {
+		return '7.874007874011811'
+	} else if (X == '63') {
+		return '7.937253933193772'
+	} else if (X == '64') {
+		return '8'
+	} else if (X == '65') {
+		return '8.06225774829855'
+	} else if (X == '66') {
+		return '8.12403840463596'
+	} else if (X == '67') {
+		return '8.18535277187245'
+	} else if (X == '68') {
+		return '8.246211251235321'
+	} else if (X == '69') {
+		return '8.306623862918075'
+	} else if (X == '70') {
+		return '8.366600265340756'
+	} else if (X == '71') {
+		return '8.426149773176359'
+	} else if (X == '72') {
+		return '8.48528137423857'
+	} else if (X == '73') {
+		return '8.54400374531753'
+	} else if (X == '74') {
+		return '8.602325267042627'
+	} else if (X == '75') {
+		return '8.660254037844387'
+	} else if (X == '76') {
+		return '8.717797887081348'
+	} else if (X == '77') {
+		return '8.774964387392123'
+	} else if (X == '78') {
+		return '8.831760866327848'
+	} else if (X == '79') {
+		return '8.888194417315589'
+	} else if (X == '80') {
+		return '8.94427190999916'
+	} else if (X == '81') {
+		return '9'
+	} else if (X == '82') {
+		return '9.055385138137417'
+	} else if (X == '83') {
+		return '9.1104335791443'
+	} else if (X == '84') {
+		return '9.16515138991168'
+	} else if (X == '85') {
+		return '9.219544457292887'
+	} else if (X == '86') {
+		return '9.273618495495704'
+	} else if (X == '87') {
+		return '9.327379053088816'
+	} else if (X == '88') {
+		return '9.38083151964686'
+	} else if (X == '89') {
+		return '9.433981132056603'
+	} else if (X == '90') {
+		return '9.486832980505138'
+	} else if (X == '91') {
+		return '9.539392014169456'
+	} else if (X == '92') {
+		return '9.591663046625438'
+	} else if (X == '93') {
+		return '9.643650760992955'
+	} else if (X == '94') {
+		return '9.695359714832659'
+	} else if (X == '95') {
+		return '9.746794344808963'
+	} else if (X == '96') {
+		return '9.797958971132712'
+	} else if (X == '97') {
+		return '9.848857801796104'
+	} else if (X == '98') {
+		return '9.899494936611665'
+	} else if (X == '99') {
+		return '9.9498743710662'
+	} else if (X == '100') {
+		return '10'
+	} else if (X == '101') {
+		return '10.04987562112089'
+	} else if (X == '102') {
+		return '10.099504938362077'
+	} else if (X == '103') {
+		return '10.14889156509222'
+	} else if (X == '104') {
+		return '10.198039027185569'
+	} else if (X == '105') {
+		return '10.246950765959598'
+	} else if (X == '106') {
+		return '10.295630140987'
+	} else if (X == '107') {
+		return '10.344080432788601'
+	} else if (X == '108') {
+		return '10.392304845413264'
+	} else if (X == '109') {
+		return '10.44030650891055'
+	} else if (X == '110') {
+		return '10.488088481701515'
+	} else if (X == '111') {
+		return '10.535653752852738'
+	} else if (X == '112') {
+		return '10.583005244258363'
+	} else if (X == '113') {
+		return '10.63014581273465'
+	} else if (X == '114') {
+		return '10.677078252031311'
+	} else if (X == '115') {
+		return '10.723805294763608'
+	} else if (X == '116') {
+		return '10.770329614269007'
+	} else if (X == '117') {
+		return '10.816653826391969'
+	} else if (X == '118') {
+		return '10.862780491200215'
+	} else if (X == '119') {
+		return '10.908712114635714'
+	} else if (X == '120') {
+		return '10.954451150103322'
+	} else if (X == '121') {
+		return '11'
+	} else if (X == '122') {
+		return '11.045361017187261'
+	} else if (X == '123') {
+		return '11.090536506409418'
+	} else if (X == '124') {
+		return '11.135528725660043'
+	} else if (X == '125') {
+		return '11.180339887498949'
+	} else if (X == '126') {
+		return '11.224972160321824'
+	} else if (X == '127') {
+		return '11.269427669584644'
+	} else if (X == '128') {
+		return '11.313708498984761'
+	} else if (X == '129') {
+		return '11.357816691600547'
+	} else if (X == '130') {
+		return '11.40175425099138'
+	} else if (X == '131') {
+		return '11.445523142259598'
+	} else if (X == '132') {
+		return '11.489125293076057'
+	} else if (X == '133') {
+		return '11.532562594670797'
+	} else if (X == '134') {
+		return '11.575836902790225'
+	} else if (X == '135') {
+		return '11.61895003862225'
+	} else if (X == '136') {
+		return '11.661903789690601'
+	} else if (X == '137') {
+		return '11.704699910719626'
+	} else if (X == '138') {
+		return '11.74734012447073'
+	} else if (X == '139') {
+		return '11.789826122551595'
+	} else if (X == '140') {
+		return '11.832159566199232'
+	} else if (X == '141') {
+		return '11.874342087037917'
+	} else if (X == '142') {
+		return '11.916375287812984'
+	} else if (X == '143') {
+		return '11.958260743101398'
+	} else if (X == '144') {
+		return '12'
+	} else if (X == '145') {
+		return '12.041594578792296'
+	} else if (X == '146') {
+		return '12.083045973594572'
+	} else if (X == '147') {
+		return '12.12435565298214'
+	} else if (X == '148') {
+		return '12.165525060596439'
+	} else if (X == '149') {
+		return '12.206555615733702'
+	} else if (X == '150') {
+		return '12.24744871391589'
+	} else if (X == '151') {
+		return '12.288205727444508'
+	} else if (X == '152') {
+		return '12.328828005937952'
+	} else if (X == '153') {
+		return '12.36931687685298'
+	} else if (X == '154') {
+		return '12.409673645990857'
+	} else if (X == '155') {
+		return '12.449899597988733'
+	} else if (X == '156') {
+		return '12.489995996796797'
+	} else if (X == '157') {
+		return '12.529964086141668'
+	} else if (X == '158') {
+		return '12.569805089976535'
+	} else if (X == '159') {
+		return '12.609520212918492'
+	} else if (X == '160') {
+		return '12.649110640673518'
+	} else if (X == '161') {
+		return '12.68857754044952'
+	} else if (X == '162') {
+		return '12.727922061357855'
+	} else if (X == '163') {
+		return '12.767145334803704'
+	} else if (X == '164') {
+		return '12.806248474865697'
+	} else if (X == '165') {
+		return '12.84523257866513'
+	} else if (X == '166') {
+		return '12.884098726725126'
+	} else if (X == '167') {
+		return '12.922847983320086'
+	} else if (X == '168') {
+		return '12.96148139681572'
+	} else if (X == '169') {
+		return '13'
+	} else if (X == '170') {
+		return '13.038404810405298'
+	} else if (X == '171') {
+		return '13.076696830622021'
+	} else if (X == '172') {
+		return '13.114877048604'
+	} else if (X == '173') {
+		return '13.152946437965905'
+	} else if (X == '174') {
+		return '13.19090595827292'
+	} else if (X == '175') {
+		return '13.228756555322953'
+	} else if (X == '176') {
+		return '13.2664991614216'
+	} else if (X == '177') {
+		return '13.30413469565007'
+	} else if (X == '178') {
+		return '13.341664064126334'
+	} else if (X == '179') {
+		return '13.379088160259652'
+	} else if (X == '180') {
+		return '13.416407864998739'
+	} else if (X == '181') {
+		return '13.45362404707371'
+	} else if (X == '182') {
+		return '13.490737563232042'
+	} else if (X == '183') {
+		return '13.527749258468683'
+	} else if (X == '184') {
+		return '13.564659966250536'
+	} else if (X == '185') {
+		return '13.601470508735444'
+	} else if (X == '186') {
+		return '13.638181696985855'
+	} else if (X == '187') {
+		return '13.674794331177344'
+	} else if (X == '188') {
+		return '13.711309200802088'
+	} else if (X == '189') {
+		return '13.74772708486752'
+	} else if (X == '190') {
+		return '13.784048752090222'
+	} else if (X == '191') {
+		return '13.820274961085254'
+	} else if (X == '192') {
+		return '13.856406460551018'
+	} else if (X == '193') {
+		return '13.892443989449804'
+	} else if (X == '194') {
+		return '13.92838827718412'
+	} else if (X == '195') {
+		return '13.96424004376894'
+	} else if (X == '196') {
+		return '14'
+	} else if (X == '197') {
+		return '14.035668847618199'
+	} else if (X == '198') {
+		return '14.071247279470288'
+	} else if (X == '199') {
+		return '14.106735979665885'
+	} else if (X == '200') {
+		return '14.142135623730951'
+	} else if (X == '201') {
+		return '14.177446878757825'
+	} else if (X == '202') {
+		return '14.212670403551895'
+	} else if (X == '203') {
+		return '14.247806848775006'
+	} else if (X == '204') {
+		return '14.2828568570857'
+	} else if (X == '205') {
+		return '14.317821063276353'
+	} else if (X == '206') {
+		return '14.352700094407323'
+	} else if (X == '207') {
+		return '14.38749456993816'
+	} else if (X == '208') {
+		return '14.422205101855956'
+	} else if (X == '209') {
+		return '14.45683229480096'
+	} else if (X == '210') {
+		return '14.491376746189438'
+	} else if (X == '211') {
+		return '14.52583904633395'
+	} else if (X == '212') {
+		return '14.560219778561036'
+	} else if (X == '213') {
+		return '14.594519519326424'
+	} else if (X == '214') {
+		return '14.628738838327793'
+	} else if (X == '215') {
+		return '14.66287829861518'
+	} else if (X == '216') {
+		return '14.696938456699069'
+	} else if (X == '217') {
+		return '14.730919862656235'
+	} else if (X == '218') {
+		return '14.7648230602334'
+	} else if (X == '219') {
+		return '14.798648586948742'
+	} else if (X == '220') {
+		return '14.832396974191326'
+	} else if (X == '221') {
+		return '14.866068747318506'
+	} else if (X == '222') {
+		return '14.89966442575134'
+	} else if (X == '223') {
+		return '14.933184523068078'
+	} else if (X == '224') {
+		return '14.966629547095765'
+	} else if (X == '225') {
+		return '15'
+	} else if (X == '226') {
+		return '15.033296378372908'
+	} else if (X == '227') {
+		return '15.066519173319364'
+	} else if (X == '228') {
+		return '15.0996688705415'
+	} else if (X == '229') {
+		return '15.132745950421556'
+	} else if (X == '230') {
+		return '15.165750888103101'
+	} else if (X == '231') {
+		return '15.198684153570664'
+	} else if (X == '232') {
+		return '15.231546211727817'
+	} else if (X == '233') {
+		return '15.264337522473747'
+	} else if (X == '234') {
+		return '15.297058540778355'
+	} else if (X == '235') {
+		return '15.329709716755891'
+	} else if (X == '236') {
+		return '15.362291495737216'
+	} else if (X == '237') {
+		return '15.394804318340652'
+	} else if (X == '238') {
+		return '15.427248620541512'
+	} else if (X == '239') {
+		return '15.459624833740307'
+	} else if (X == '240') {
+		return '15.491933384829668'
+	} else if (X == '241') {
+		return '15.524174696260024'
+	} else if (X == '242') {
+		return '15.556349186104045'
+	} else if (X == '243') {
+		return '15.588457268119896'
+	} else if (X == '244') {
+		return '15.620499351813308'
+	} else if (X == '245') {
+		return '15.652475842498529'
+	} else if (X == '246') {
+		return '15.684387141358123'
+	}
+}
+
 function Square(X) {
 	if (X == "0") {
 		return "0"
@@ -1456,5 +1954,6 @@ function Fibonacci(n) {
 module.exports = {
     Calculate: Calculate,
     Fibonacci: Fibonacci,
-    Square: Square
+    Square: Square,
+	Squareroot: Squareroot
 }

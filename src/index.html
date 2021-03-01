@@ -9,6 +9,7 @@
         background: #e2e1e0;
         text-align: center;
         overflow-x: hidden;
+        font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       }
 
       .card {
@@ -39,7 +40,6 @@
         height: 100%;
       }
       .text {
-        font-family: 'Trebuchet MS',sans-serif;
         font-size: smaller;
       }
       .text.big {
@@ -54,18 +54,33 @@
         display:inline-block;
         cursor:pointer;
         color:#202020;
-        font-family:'Trebuchet MS',sans-serif;
         font-size:17px;
       }
 
       .button:hover{
         background-color:#69d6b2;
       }
+
+      .contributor {
+        height: 32px;
+        width:32px;
+        border-radius: 100%;
+        margin-left: -18px;
+        border: 4px solid #e2e1e0;
+        background: #e2e1e0;
+        transition: 0.2s margin-left;
+      }
+      #contributors:hover > .contributor {
+        margin-left: 0px;
+      }
     </style>
+    <div id="cards"></div>
+    <div id="contributors"></div>
     <script>
+
         const template = `
         <div class="card card-1">
-          <div class="contributor">
+          <div>
             <a class="text">{CONTRIBUTOR}</a>
           </div>
           <div class="title">
@@ -81,8 +96,23 @@
 
         const ipc = require('electron').ipcRenderer;
         ipc.on('addCard', (event, arg) => {
-          document.body.innerHTML += template.replace("{CONTRIBUTOR}", arg.contributor).replace("{TITLE}", arg.title).replace("{ID}", arg.id);
+          document.querySelector("#cards").innerHTML += template.replace("{CONTRIBUTOR}", arg.contributor).replace("{TITLE}", arg.title).replace("{ID}", arg.id);
         })
+
+        ;(async() => {
+          var f = await fetch("https://api.github.com/repos/v3rmillionwastaken/UntitledNodeProject/contributors")
+          var j = (await f.json()).filter((u) => u.type == "User")
+          var c = document.querySelector("#contributors")
+          c.innerHTML += "UntitledNodeProject was made by <b>" + j.length + "</b> contributors!<br>"
+          for (var contrib of j) {(function(contrib) {
+            var img = document.createElement("img")
+            img.className = "contributor"
+            img.src = contrib.avatar_url
+            img.alt = contrib.login
+            img.onclick = () => require("electron").shell.openExternal("https://github.com/" + contrib.login)
+            c.appendChild(img)
+          })(contrib)}
+        })()
     </script>
   </head>
   <body>
